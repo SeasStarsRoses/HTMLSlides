@@ -1,3 +1,19 @@
+# HTML Slides
+
+## Installation Instruction
+Use this instruction to see the HTML Presentation.
+## Simple Installation (or let's call it 'Download')
+- Open URL in Browser: https://github.com/SeasStarsRoses/HTMLSlides
+- Click 'Clone or Download' button
+- Click 'Download ZIP' button
+- Download the file 'HTMLSlides-master.zip'
+- Extract the ZIP file on you hard disk. Most Operating Systems support the extraction directly. If not, then  use for example the tools WinZip or 7-Zip.
+- Click at the file 'index.html' to launch the presentation in a browser
+## Advanced Installation
+- Install git and clone the repository: git clone https://github.com/SeasStarsRoses/HTMLSlides.git
+- Install NodeJs to launch the presentation:
+  - npm build
+  - npm start
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js) <a href="https://slides.com?ref=github"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://revealjs.com/).
