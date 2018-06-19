@@ -3,7 +3,7 @@
 ## Installation Instruction
 Use this instruction to see the HTML Presentation.
 ## Simple Installation (or let's call it 'Download')
-- Open URL in Browser: https://github.com/SeasStarsRoses/HTMLSlides
+- Open URL in Browser: https://github.com/SeasStarsRoses/HTML
 - Click 'Clone or Download' button
 - Click 'Download ZIP' button
 - Download the file 'HTMLSlides-master.zip'
