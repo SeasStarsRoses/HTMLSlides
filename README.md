@@ -1,9 +1,9 @@
-# HTML Slides
+# WebFrontend Slides
 
 ## Installation Instruction
-Use this instruction to see the HTML Presentation.
+Use this instruction to see the Presentation.
 ## Simple Installation (or let's call it 'Download')
-- Open URL in Browser: https://github.com/SeasStarsRoses/HTML
+- Open the [Presentation](https://seasstarsroses.github.io/WebFrontendPresentation/).
 - Click 'Clone or Download' button
 - Click 'Download ZIP' button
 - Download the file 'HTMLSlides-master.zip'
