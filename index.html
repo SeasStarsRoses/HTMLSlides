@@ -1,112 +1,354 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html  >
 
-		<title>Pupil Internship</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	<style>
+		td {
+			text-align: center;
+			vertical-align: middle;
+		}
+	</style>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-background="#0000ff">
-					Pupil Internship
-				</section>
-				<section data-background="#0000ff">
-					<h2>Program</h2>
-					<ul>
-						<li>Introduction</li>
-						<li>HTML</li>
-						<li>End</li>
-					</ul>
-				</section>
-				<section data-background="#0000ff">
-					<section>
-						<h2>Units</h2>
-						<a href="#" class="navigate-down">
-								<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>	
-					</section>
-					<section>
-						<h1>Unit:</h1>
-						<h2>Unit Name 1</h2>
-						<ul>
-							<li>Pupil Name 1</li>
-							<li>Pupil Name 2</li>
-						</ul>
-						<p>Activity: Activity 1</p>
-					</section>	
-					<section>
-							<h1>Unit:</h1>
-							<h2>Unit Name 2</h2>
-							<ul>
-								<li>Pupil Name 1</li>
-								<li>Pupil Name 2</li>
-							</ul>
-							<p>Activity: Activity 2</p>
-						</section>	
-						<section>
-							<h2>Basement Level 2</h2>
-							<p>That's it, time to go back up.</p>
-							<br>
-							<a href="#/2">
-								<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-							</a>
-					</section>											
-				</section>
-				<section data-markdown data-background="#0000ff">
-						<script type="text/template">
-							## HTML Training
-							pheide@t-online.de
-							```
-<!DOCTYPE html>
-<html>
-  <head>
-	<title>HTML Training</title>
-	<meta name="author" content="Pupils">
-  </head>
-  <body>
-	<p>Hello World!</p>
-  </body>	  	
-</html	
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
 
-							```
-						</script>
-					</section>
-					
-			</div>
+<body background-color="red">
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Student Summary</h2>
+				<h2>HTML and JavaScript</h2>
+			</section>
+			<!-- Begrüßung und Einstieg: Thomas -->
+			<!-- EinstiegsQuestion -->
+			<section>
+				First Question<br><br>What means HTML?
+				<p id='solution' style="visibility: hidden" ;>Hyper Text Markup Language</p>
+				<button onclick="show('solution')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 1  -->
+			<section>How would you present the following character? &quot;&szlig;&quot; <br>
+				<table border="1px">
+					<tr>
+						<td>
+							&suml;
+						</td>
+						<td>
+							ß
+						</td>
+					</tr>
+					<tr>
+						<td>
+							&suml
+						</td>
+						<td>
+							&amp;szlig;
+						</td>
+					</tr>
+
+				</table>
+				<p id='solution1' style="visibility: hidden" ;>The solution is &amp;szlig;</p>
+				<button onclick="show('solution1')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 2 -->
+			<section>What belongs to margin and padding?
+				<img id="margin_task" src="img/margin.jpg">
+				
+				<button onclick="document.getElementById('margin_task').src = 'img/margin_solution.jpg'";>Show solution</button>
+			</section>
+
+			<!-- Question 3 Thomas-->
+			<section>Bind the file test.jpg from the folder img here. The height and width should be 300 Pixel!
+				<br><input type="text" id="img_input">
+				<p id='solution3' style="visibility: hidden" ;>The solution is the tag a: &lt;img src=&quot;./img/test.jpg&quot; alt=&quot;HTML5 Icon&quot; style=&quot;height:128px;height:300px;&quot;></p>
+				<button onclick="show('solution3'); showImg()" ;>Show solution</button>
+			</section>
+
+			<!-- Question 4 -->
+			<section>What is the output of the following code?
+				<br>
+				<p align="left" ;>function multipleNumbers(a,b){
+					<br> var c=a*b;
+					<br> }
+					<br> multipleNumbers(2,6);
+				</p>
+				<table border="1px">
+					<tr>
+						<td>
+							24
+						</td>
+						<td>
+							12
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Error!
+						</td>
+						<td>
+							Nothing
+						</td>
+					</tr>
+
+				</table>
+				<p id='solution4' style="visibility: hidden" ;>The solution is "Nothing".</p>
+				<button onclick="show('solution4')" ;>Show solution</button>
+			</section>
+			<!-- Question 5-->
+			<section>What is the correct syntax to include an external file script.js into HTML?
+				<table border="1px">
+					<tr>
+						<td>
+							&lt;script name = &quot;script.js&quot;&gt;
+						</td>
+						<td>
+							&lt;script src = &quot;script.js&quot;&gt;
+						</td>
+					</tr>
+					<tr>
+						<td>
+							&lt;script href = &quot;script.js&quot;&gt;
+						</td>
+						<td>
+							&lt;script name = script.js&gt;
+						</td>
+					</tr>
+
+				</table>
+				<p id='solution5' style="visibility: hidden" ;>&lt;script src = &quot;script.js&quot;&gt;</p>
+				<button onclick="show('solution5')" ;>Show solution</button>
+			</section>
+
+
+
+			<!-- Question 6 Thomas-->
+			<section>What is the output?
+				<br>
+				<p align="left" ;>function test(a,b){
+					<br> if(a &gt; b){
+					<br> return a * b;
+					<br> } else{
+					<br> return b / a;
+					<br> }
+					<br> }
+					<br> alert(test(5,15));
+				</p>
+				<p id='solution6' style="visibility: hidden" ;>The output is 3.</p>
+				<button onclick="show('solution6')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 7-->
+			<section>How can you import JavaScript into HTML?
+				<table border="1px">
+					<tr>
+						<td>
+							direkt in the HTML-Code
+						</td>
+						<td>
+							in the head
+						</td>
+					</tr>
+					<tr>
+						<td>
+							as external file
+						</td>
+						<td>
+							in the body
+						</td>
+					</tr>
+
+				</table>
+				<p id='solution7' style="visibility: hidden" ;>All answers are correct!</p>
+				<button onclick="show('solution7')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 8-->
+			<section>What is wrong with the following code?
+				<br> &lt;p onclick="alert("Hallo world!");">Click me&lt;/p&gt;
+
+				<p id='solution8' style="visibility: hidden" ;>The inner &quot must be replaced with '</p>
+				<button onclick="show('solution8')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 9 Thomas-->
+			<section>Which Code produces the following output?
+				<br>
+				<img src="img/list.png" width="300px" style="float:left">
+
+				<p id='solution9' style="visibility: hidden" ;><img src="img/listCode.png" width="400px" style="float:left"></p>
+
+				<button onclick="show('solution9')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 12 Tafel Thomas-->
+			<section>How do you get the following output?
+
+				<p id='solution12' style="visibility: hidden;" ;>Grafik 1: float = left <br> Grafik 2: float = right</p>
+
+				<button onclick="show('solution12')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 13  -->
+			<section>Write code for a paragraph to jump to the Link "Heading"
+
+				<p id='solution13' style="visibility: hidden;" ;><img src="img/verweisCode.png" width="700px"></p>
+
+				<button onclick="show('solution13')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 14 -->
+			<section>What happens when running the following code?
+				<img src="img/dropDownCode.png" width="400" style="float: left">
+				<p id='solution14' style="visibility: hidden;" ;><img src="img/dropDown.png" width="150px" style="float:right"></p>
+
+				<button onclick="show('solution14')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 15 Thomas -->
+			<section>Explain colspan and rowspan and the difference!
+				<p id='solution15' style="visibility: hidden;" ;> colspan: Merges cell in a column <br> rowspan: Merges cells in a row </p>
+
+				<button onclick="show('solution15')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 16 Tafel-->
+			<section>Write a valid HTML Hello World example.
+				<p id='solution16' style="visibility: hidden;" ;> <img src="img/htmlSample.png" width="400"> </p>
+
+				<button onclick="show('solution16')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 17-->
+			<section>Who lead the developer group of HTML?
+				<table border="1px">
+					<tr>
+						<td>
+							Bill Gates
+						</td>
+						<td>
+							Pierre Omidyar
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Tim Berners-Lee
+						</td>
+						<td>
+							Ray Tomlinson
+						</td>
+					</tr>
+
+				</table>
+				<p id='solution17' style="visibility: hidden" ;>Tim Berners-Lee</p>
+				<button onclick="show('solution17')" ;>Show solution</button>
+			</section>
+
+			<!-- Question 18 Thomas-->
+			<section>How will the background color rendered correctly?
+				<table border="1px">
+					<tr>
+						<td>
+							&lt; body background-color="red"&gt;
+						</td>
+						<td>
+							&lt; html background-color="red"&gt;
+						</td>
+					</tr>
+					<tr>
+						<td>
+							&lt; body background-color="26500"&gt;
+						</td>
+						<td>
+							&lt; body style="background-color:yellow;" &gt;
+						</td>
+					</tr>
+
+				</table>
+				<p id='solution18' style="visibility: hidden" ;>&lt; body style="background-color:yellow;" &gt;</p>
+				<button onclick="show('solution18')" ;>Show solution</button>
+			</section>
+			
+			<!-- Question 19-->
+			<section>Open the page "https://meine.allianz.de/" in a new tab!
+				<br><input type="text" id="a_input">
+				<p id='solution19' style="visibility: hidden" ;>Hello world</p>
+				<button onclick="show('solution19'); showA()" ;>Show solution</button>
+			</section>
+			
+			<!-- Question 20-->
+			<section>Find the error!<br>
+				<img src="img/error.jpg"  id="error_task" ><br>
+				<button onclick="document.getElementById('error_task').src = 'img/error_solution.jpg'" ;>Show solution</button>
+			</section>
+
+			<!-- Last slide-->
+			<section>
+				Thank you!
+			</section>
+
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	<!-- Lösung show -->
+
+	<script>
+		function ausblenden(solution) {
+			var info = document.getElementById(solution);
+			info.style.display = "none";
+		}
+
+		function show(solution) {
+			var info = document.getElementById(solution);
+			info.style.visibility = 'visible';
+		}
+
+		function showImg() {
+			var info = document.getElementById('img_input');
+			document.getElementById('solution3').innerHTML = info.value;
+		}
+
+		function showA() {
+			var info = document.getElementById('a_input');
+			document.getElementById('solution19').innerHTML = info.value;
+		}
+	</script>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
 </html>
