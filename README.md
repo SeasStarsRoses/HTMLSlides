@@ -3,7 +3,9 @@
 ## Installation Instruction
 Use this instruction to see the Presentation.
 ## Simple Installation (or let's call it 'Download')
-- Open the [Presentation](https://seasstarsroses.github.io/WebFrontendPresentation/).
+- Open the Presentations
+  - [WebFrontend](https://seasstarsroses.github.io/WebFrontendPresentation/)
+  - [HTML](https://seasstarsroses.github.io/WebFrontendPresentation/HTML.html)
 - Click 'Clone or Download' button
 - Click 'Download ZIP' button
 - Download the file 'HTMLSlides-master.zip'
