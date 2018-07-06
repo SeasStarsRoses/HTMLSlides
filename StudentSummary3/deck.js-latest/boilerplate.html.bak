@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+
+    <title>Student Summmary</title>
+
+    <!-- Required stylesheet -->
+    <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+    <!-- Extension CSS files go here. Remove or add as needed. -->
+    <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+    <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+    <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+    <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+
+    <!-- Style theme. More available in /themes/style/ or create your own. -->
+    <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
+
+    <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+    <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+    <!-- Basic black and white print styles -->
+    <link rel="stylesheet" media="print" href="core/print.css">
+
+    <!-- Required Modernizr file -->
+    <script src="modernizr.custom.js"></script>
+</head>
+<body onload="hide()">
+<div class="deck-container">
+
+    <!-- Begin slides. Just make elements with a class of slide. -->
+
+    <section class="slide">
+        <h1>Student Summary III</h1><br>
+        <p>from Nico & Nathan</p>
+    </section>
+
+    <section class="slide">
+        <img id="img_feld" src="../feld.jpg" width="1920" height="1080">
+        <img src="../ball.png" id="ball">
+    </section>
+
+    <!--bis hier her sind es 0-->
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+        <h2>On top of which language is Angular build on?</h2>
+
+    </section>
+
+    <section class="slide">
+        <canvas id="feld0" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+        <h2>When was AngularJS released?</h2>
+    </section>
+
+    <section class="slide">
+        <canvas id="feld1" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>In which year was Angular 2 released?</h2>
+    </section>
+
+    <section class="slide">
+        <canvas id="feld2" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>What is 'ngOnInit' for?</h2>
+    </section>
+
+    <section class="slide">
+        <canvas id="feld3" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>Implement a two way binding!</h2>
+        <img src="../towwaybinding.png" width="1400" height="196">
+        <p align="center">What needs to be replaced by '???'?</p>
+
+        <div id="hide0" class="hide" align="center">
+            <p>[(ngModel)]</p>
+        </div>
+        <p align="center">
+            <button onclick="showSolution('hide0')">Solutio</button>
+        </p>
+    </section>
+
+    <section class="slide">
+        <canvas id="feld4" width="1920" height="1080">
+        </canvas>
+    </section>
+    <!--bis hier her sind es 5-->
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>How would you realize this '*ngFor'-Loop in Java?</h2>
+        <img src="../ngFor.png" width="2338" height="110">
+
+
+        <div id="hide1" class="hide">
+            <img src="../foreach.png">
+        </div>
+        <p align="center">
+            <button onclick="showSolution('hide1')">L&ouml;sung</button>
+        </p>
+    </section>
+
+    <section class="slide">
+        <canvas id="feld5" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>What is the purpose of Services?</h2>
+    </section>
+
+    <section class="slide">
+        <canvas id="feld6" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>What is the purpose of the components?</h2>
+    </section>
+
+    <section class="slide">
+        <canvas id="feld7" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+
+        <h2>How are Angular variables flagged within the HTML Dokument?</h2>
+
+        <div id="hide2" class="hide" align="center">
+            <p>{{variable}}</p>
+        </div>
+        <p align="center">
+            <button onclick="showSolution('hide2')">L&ouml;sung</button>
+        </p>
+    </section>
+
+    <section class="slide">
+        <canvas id="feld8" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>Tour of Heroes: What ist the name of the first Hero?</h2>
+    </section>
+    <!--bis hier her sind es 10-->
+
+    <section class="slide">
+        <canvas id="feld9" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>What is the purpose of the colon before'id' in the code?</h2>
+
+        <img src="../placholderforid.png">
+    </section>
+
+    <section class="slide">
+        <canvas id="feld10" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>Write a variable in Angular in big letters.</h2>
+
+        <p align="center">{{variable | ???}}</p>
+
+        <div id="hide3" class="hide" align="center">
+            <p> {{variable | uppercase}} </p>
+        </div>
+        <p align="center">
+            <button onclick="showSolution('hide3')">L&ouml;sung</button>
+        </p>
+    </section>
+
+    <section class="slide">
+        <canvas id="feld11" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();malenNachZahlen()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();malenNachZahlen()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>Set the maximun lenght of 13 for the input.</h2>
+
+        <p align="center"><img src="../inputgrenze.png"></p>
+
+        <div id="hide4" class="hide" align="center">
+            <p> maxlength="13" </p>
+        </div>
+        <p align="center">
+            <button onclick="showSolution('hide3')">L&ouml;sung</button>
+        </p>
+    </section>
+
+    <section class="slide">
+        <canvas id="feld12" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <section class="slide">
+        <a onclick="red();score()"><img src="../roteflagge.png" width="230" height="140" align="left"></a>
+        <a onclick="blue();score()"><img src="../blaueflagge.png" width="230" height="140" align="right"></a>
+        <br><br><br><br><br>
+
+        <h2>Explain the difference between Call-By-Reference und Call-By-Value?</h2>
+    </section>
+
+    <section class="slide">
+        <canvas id="last" width="1920" height="1080">
+        </canvas>
+    </section>
+
+    <!-- until here are 14-->
+
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+        <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+        <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+        <span class="deck-status-current"></span>
+        /
+        <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+        <label for="goto-slide">Go to slide:</label>
+        <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+        <datalist id="goto-datalist"></datalist>
+        <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+</div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+<script src="logic.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+    $(function () {
+        $.deck('.slide');
+    });
+</script>
+</body>
+</html>
