@@ -1,11 +1,11 @@
-# WebFrontend Slides
-
+# Student Summaries
+- [WebFrontend](https://seasstarsroses.github.io/WebFrontendPresentation/)
+- [Angular](https://seasstarsroses.github.io/WebFrontendPresentation/StudentSummary3/deck.js-latest/boilerplate.html)
+# Pupil Presentation
+[HTML](https://seasstarsroses.github.io/WebFrontendPresentation/HTML.html)
 ## Installation Instruction
 Use this instruction to see the Presentation.
-## Simple Installation (or let's call it 'Download')
-- Open the Presentations
-  - [WebFrontend](https://seasstarsroses.github.io/WebFrontendPresentation/)
-  - [HTML](https://seasstarsroses.github.io/WebFrontendPresentation/HTML.html)
+## Download
 - Click 'Clone or Download' button
 - Click 'Download ZIP' button
 - Download the file 'HTMLSlides-master.zip'
