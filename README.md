@@ -1,6 +1,7 @@
 # Student Summaries
-- [WebFrontend](https://seasstarsroses.github.io/WebFrontendPresentation/)
-- [Angular](https://seasstarsroses.github.io/WebFrontendPresentation/StudentSummary3/deck.js-latest/boilerplate.html)
+- [HTML](https://seasstarsroses.github.io/WebFrontendPresentation/)
+- [Angular](https://seasstarsroses.github.io/WebFrontendPresentation/StudentSummaryAngular/deck.js-latest/boilerplate.html)
+- [JavaScript and CSS](https://seasstarsroses.github.io/WebFrontendPresentation/StudentSummaryJavaScriptCSS/index.html)
 # Pupil Presentation
 [HTML](https://seasstarsroses.github.io/WebFrontendPresentation/HTML.html)
 ## Installation Instruction
