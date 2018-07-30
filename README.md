@@ -2,8 +2,6 @@
 - [HTML and JavaScript](https://seasstarsroses.github.io/WebFrontendPresentation/)
 - [JavaScript, CSS and Typescript](https://seasstarsroses.github.io/WebFrontendPresentation/StudentSummaryJavaScriptCSS/index.html)
 - [Angular](https://seasstarsroses.github.io/WebFrontendPresentation/StudentSummaryAngular/deck.js-latest/boilerplate.html)
-# Pupil Presentation
-[HTML](https://seasstarsroses.github.io/WebFrontendPresentation/HTML.html)
 ## Installation Instruction
 Use this instruction to see the Presentation.
 ## Download
